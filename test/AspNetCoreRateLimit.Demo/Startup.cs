@@ -62,7 +62,7 @@ namespace AspNetCoreRateLimit.Demo
             app.UseBlockingDetection();
 
             app.UseIpRateLimiting();
-            app.UseClientRateLimiting();
+            //.UseClientRateLimiting();
 
             if (env.IsDevelopment())
             {
